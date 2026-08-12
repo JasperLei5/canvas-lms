@@ -1,19 +1,10 @@
 {
-  "name": "canvas-lms",
-  "dockerComposeFile": [],
-  "service": "web",
-  "workspaceFolder": "/usr/src/app",
+  "name": "Canvas LMS Dev",
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get -y install postgresql-14 zlib1g-dev libldap2-dev libidn11-dev libxml2-dev libsqlite3-dev libpq-dev libyaml-dev libxmlsec1-dev curl build-essential",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "biomejs.biome",
-        "dbaeumer.vscode-eslint",
-        "koichisasada.vscode-rdbg",
-        "ms-azuretools.vscode-docker",
-        "redhat.vscode-yaml",
-        "Shopify.ruby-lsp",
-        "eamodio.gitlens"
-      ]
+      "extensions": ["Shopify.ruby-lsp", "eamodio.gitlens"]
     }
   }
 }
