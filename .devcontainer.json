@@ -1,6 +1,6 @@
 {
   "name": "Canvas LMS Dev",
-  "image": "mcr.microsoft.com/devcontainers/universal:2-ubuntu-22.04",
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
   "postCreateCommand": "sudo apt-get update && sudo apt-get -y install postgresql-14 zlib1g-dev libldap2-dev libidn11-dev libxml2-dev libsqlite3-dev libpq-dev libyaml-dev libxmlsec1-dev curl build-essential",
   "customizations": {
     "vscode": {
